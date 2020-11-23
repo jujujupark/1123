@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>무드보드</title>
+    
+  </head>
+
+
+  <style>
+    html {height: 100%;}
+
+    body {height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #ff83ce;}
+
+    ol, ul {list-style: none;}
+
+    header {width: 100%;}
+    
+
+
+
+    .header {width: 1400px;
+    height: 200px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 20px;}
+
+    .header .inner {height: 100%;
+    position: relative;}
+
+    .header h1 {font-size: 60px;
+	font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    text-align: center;
+    margin: 0px;}   
+
+    .main .section {
+      width: 1400px;
+      height: 700px;
+      background-color:  #ff83ce;
+      margin: 20px auto;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .main .section .p0_img0 {position: absolute;
+    height: 500px;
+    top: 70px;
+    left: 70px;
+    z-index: 1;}
+
+    .main .section .p1_img1 {position: absolute;
+    height: 410px;
+    top: -100px;
+    left: -50px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .p1_img1:hover {top: -130px;
+    cursor: pointer;}
+
+    .main .section .p1_img2 {position: absolute;
+    height: 70px;
+    top: 70px;
+    left: 400px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .p1_img2:hover {transform: scale(1.5);
+    cursor: pointer;}
+
+    .main .section .p1_img3 {position: absolute;
+    height: 170px;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .p1_img3:hover {transform: scale(1.1);
+    cursor: pointer;
+    }
+
+    .main .section .p1_img3_2 {position: absolute;
+    height: 100px;
+    top: 0px;
+    left: 250px;
+    z-index: 2;}
+
+    .main .section .p1_img4 {position: absolute;
+    height: 250px;
+    top: 160px;
+    left: 310px;
+    opacity: 0.5;
+    transition: 1s;}
+
+    .main .section .p1_img4:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+
+    .main .section .p1_img5 {position: absolute;
+    height: 200px;
+    top: 390px;
+    left: 60px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .p1_img5:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .p1_img6 {position: absolute;
+    height: 250px;
+    top: 450px;
+    left: 60px;}
+
+    .main .section .p1_img7 {position: absolute;
+    height: 1000px;
+    top: 200px;
+    left: 190px;
+    z-index: 2;
+    transition: 1.0s;
+    animation: motion 2.0s linear 0s infinite;}
+
+    .main .section .p1_img7:hover {cursor: pointer;}
+
+    @keyframes motion {0% {top: 90px;}
+	50% {top: 60px;}
+	100% {top: 90px;}}
+
+    .main .section .p1_img8 {position: absolute;
+    height: 280px;
+    top: 80px;
+    left: 550px;
+    z-index: 1;}
+
+    .main .section .p1_img9 {position: absolute;
+    height: 110px;
+    top: 450px;
+    left: 650px;
+    z-index: 1;}
+
+    .main .section .p1_img10 {position: absolute;
+    height: 70px;
+    top: 580px;
+    left: 540px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .p1_img10:hover {top: 600px;
+    transform: rotate(180deg);
+    cursor: pointer;}
+
+    .main .section .p1_img11 {position: absolute;
+    height: 190px;
+    top: 80px;
+    left: 920px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .p1_img11:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .p1_img12 {position: absolute;
+    height: 110px;
+    top: 10px;
+    left: 1080px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .p1_img12:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .p1_img13 {position: absolute;
+    height: 150px;
+    top: 110px;
+    left: 1120px;
+    z-index: 3;
+    transition: 1s;}
+
+    .main .section .p1_img13:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .p1_img14 {position: absolute;
+    height: 200px;
+    top: 350px;
+    left: 900px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .p1_img14:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+
+    .main .section .p1_img14_2 {position: absolute;
+    height: 200px;
+    top: 300px;
+    left: 1141px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .p1_img14_2:hover {transform: scale(1.1);
+    cursor: pointer;}
+    .main .section .p1_img15 {position: absolute;
+    height: 470px;
+    top: 320px
+    left: 1050px;
+    z-index: 1;
+	transition: 1s;}
+
+    .main .section .p1_img15:hover {top: 290px;
+    cursor: pointer;}
+  </style>
+
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="inner">
+         
+          <div class="nav">
+            <ul>
+              <li><a href="index.html" class="menu1">귀여움을 느끼는 이유(심리적)</a></li>
+              <li><a href="detail.html" class="menu2">귀여움의 뒤통수(사회적,경제적)</a></li>
+               <li><a href="detail.html" class="menu2">귀여운 짤 아카이브
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="section">
+        <img class="p0_img0" src="c_31.jpg">
+        <img class="p1_img2" src="c_29.gif">
+        <img class="p1_img3" src="c_15.gif">
+        <img class="p1_img3_2" src="c_22.gif">
+        <img class="p1_img4" src="c_49.gif">
+        <img class="p1_img5" src="c_7.gif">
+        <img class="p1_img6" src="c_12.png">
+        <img class="p1_img7" src="c_36.png">
+        <img class="p1_img8" src="c_13.png">
+        <img class="p1_img9" src="page1_img9.png">
+        <img class="p1_img10" src="page1_img10.png">
+        <img class="p1_img11" src="c_52.gif">
+        <img class="p1_img12" src="c_23.gif">
+        <img class="p1_img13" src="c_56.jpeg">
+        <img class="p1_img14" src="c_3.gif">
+        <img class="p1_img14_2" src="c_11.gif">
+        <img class="p1_img15" src="page1_img15.png">
+      </section>
+    </div>
+     <div class="main">
+      <section class="section">
+        <img class="p2_img1" src="c_2.gif">
+        
+      </section>
+    </div>
+  </body>
+</html>
